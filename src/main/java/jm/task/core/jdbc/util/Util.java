@@ -15,7 +15,7 @@ public class Util {
     private static final String DRIVER = "com.mysql.jdbc.Driver";
     private static SessionFactory sessionFactory;
 
-    public SessionFactory getSessionFactory() {
+    public static SessionFactory getSessionFactory() {
         Properties properties = new Properties();
         try {
             if (sessionFactory == null) {
