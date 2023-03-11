@@ -12,7 +12,7 @@ public class Util {
     private static final String USERNAME = "root";
     private static final String PASSWORD = "root";
     private static final String DIALECT = "org.hibernate.dialect.MySQLDialect";
-    private static final String DRIVER = "com.mysql.jdbc.Driver";
+    private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
     private static SessionFactory sessionFactory;
 
     public static SessionFactory getSessionFactory() {
