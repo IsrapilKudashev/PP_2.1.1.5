@@ -25,7 +25,6 @@ public class Util {
                 properties.put(Environment.DIALECT, DIALECT);
                 properties.put(Environment.DRIVER, DRIVER);
                 properties.put(Environment.SHOW_SQL, true);
-                properties.put(Environment.CURRENT_SESSION_CONTEXT_CLASS, "thread");
                 properties.put(Environment.HBM2DDL_AUTO, "");
 
                 sessionFactory = new Configuration().addProperties(properties).addAnnotatedClass(User.class).buildSessionFactory();
