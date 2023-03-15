@@ -19,7 +19,7 @@ public class Main {
         userService.removeUserById(1);
 
         List<User> usersList = userService.getAllUsers();
-        usersList.forEach(user -> System.out.println(user.toString()));
+        usersList.forEach(System.out::println);
 
         userService.cleanUsersTable();
         userService.dropUsersTable();
